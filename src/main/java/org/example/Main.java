@@ -7,14 +7,14 @@ public class Main {
 
   public static void main(String[] args) {
     ArrayList<String> arrayList = new ArrayList<>(Arrays.asList("one", "two", "three"));
-    Apply apply = new Apply();
-    System.out.println(filter(arrayList, apply));
+    Applying applying = new Applying();
+    System.out.println(filter(arrayList, applying));
 
   }
-  public static ArrayList<String> filter(ArrayList<String> objects, Apply apply){
+  public static ArrayList<String> filter(ArrayList<String> objects, Applying applying){
     ArrayList<String> str = new ArrayList<>();
     for (Object i : objects) {
-      str.add(apply.apply(i).toString());
+      str.add(applying.apply(i).toString());
     }
     return str;
    }

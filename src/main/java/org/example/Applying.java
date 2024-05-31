@@ -2,7 +2,7 @@ package org.example;
 
 
 
-public class Apply implements Filter {
+public class Applying implements Filter {
 
   @Override
   public Object apply(Object o) {
